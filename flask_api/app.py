@@ -19,7 +19,7 @@ with open('./models/scaler.pkl', 'rb') as file:
     scaler = pickle.load(file)
 
 def get_weather_data(lat, lon):
-    api_key = '2c2f66f576214a88ae92184d4134b59c'
+    api_key = 'API KEY'
     url = f"https://api.weatherbit.io/v2.0/forecast/daily?lat={lat}&lon={lon}&key={api_key}"
     response = requests.get(url)
 
